@@ -6,7 +6,7 @@
         li a0, 0            # File descriptor, 0 for STDIN
         li a7, 5            # System call code for read integer. The value will be in a0
         ecall
-        addi a0, a0, -1 # return val = return val - 1
+        addi a0, a0, -1
         jal ra, f 
         jal ra, printresult
 f:	
