@@ -18,6 +18,7 @@ int f(int x)
 int main()
 {
     int x;
+    printf("Enter an integer...\n");
     scanf("%d", &x);
     int r =  f(x);
     printf("%d\n", r);
