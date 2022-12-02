@@ -7,12 +7,12 @@ int f(int x)
     {
         return 5;
     }
-    else if (x > 0)
+    else if (x < 0)
     {
-        return 2 * f(x - 1) + x;
+        return 1;
     }
 
-    else return 1;
+    else return 2 * f(x - 1) + x;
 }
 
 int main()
