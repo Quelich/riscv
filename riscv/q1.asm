@@ -3,7 +3,6 @@
         la a0, askint	        # prepare to print string  
         li a7, 4			# print string
         ecall
-        
         li a0, 0            # File descriptor, 0 for STDIN
         li a7, 5            # System call code for read integer. The value will be in a0
         ecall
@@ -21,7 +20,7 @@ loop2:
       addi a0, zero, 1 # stdout
       la a1, star # load the address of star
       addi a2, zero, 1 # length of star
-       addi a7, zero, 64 # syscall to print string
+      addi a7, zero, 64 # syscall to print string
       ecall
       jal ra, loop2
 end2:
