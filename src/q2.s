@@ -18,7 +18,7 @@ LFB10:
 L2:
 	cmpl	$0, 8(%ebp)
 	jns	L4
-	movl	$1, %eax
+	movl	$0, %eax
 	jmp	L3
 L4:
 	movl	8(%ebp), %eax
